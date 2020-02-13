@@ -80,11 +80,9 @@ class DB():
 
       with sqlite3.connect('states.db') as con:
           cursor = con.cursor()
-          print('akdfjakl')
-          cursor.execute(" SELECT image_path FROM file_paths WHERE chat_id = ? ", (chat_id,))
-          print('kkkkkkkkkkkkkkkkkkk')
+          cursor.execute(" SELECT image_path FROM file_paths WHERE chat_id = ? ", (chat_id,)
           result = cursor.fetchone()
-          print(result)
+          
           if result and result[0] != None:
               return result[0]
 
