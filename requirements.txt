@@ -1,4 +1,4 @@
 python-telegram-bot
 pydub == 0.23.1
-pillow == 7.0.0
+pillow == 9.0.0
 opencv-python == 4.2.0.32
